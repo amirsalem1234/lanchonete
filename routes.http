@@ -1,0 +1,34 @@
+POST http://localhost:3333/lanche
+Content-Type: application/json
+
+{
+
+    "pedido": "hamburguer",
+    "ingredientes": "alface, carne, ovo, tomate, batata palha, pão",
+    "tipo": "não vegetariana",
+    "refri": "coca cola 2L"
+}
+
+###
+
+GET http://localhost:3333/lanche
+
+###
+
+GET http://localhost:3333/lanche?search=IFMS
+
+
+###
+PUT http://localhost:3333/lanches/be12b12e-fadf-4b18-8b63-feabdeab7fb2
+Content-Type: application/json
+
+{
+    "pedido": "hamburguer",
+    "ingredientes": "Cogumelo, alface, tomate, cebola, pão",
+    "tipo": "vegetariana",
+    "refri": "sprite 1L"
+}
+
+###
+
+DELETE http://localhost:3333/lanches/88bf6164-81bc-42f4-8659-9c74cc61250e
